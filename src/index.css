@@ -1,0 +1,78 @@
+
+body {
+  background-color: rgb(175, 175, 175);
+  display: flex;               /* Makes the body a flex container */
+  justify-content: center;     /* Centers content horizontally */
+  align-items: center;         /* Centers content vertically */
+  height: 100vh;               /* Ensures the body takes full viewport height */
+  margin: 0;                   /* Removes default body margin */
+}
+
+.stopwatch {
+  background-color: white;
+  border: 3px solid rgb(92, 92, 92);
+  border-radius: 30px;
+  margin: 10px;
+  padding: 35px 35px;
+  display: flex;
+  flex-direction: column;      /* Ensures children are stacked vertically */
+  justify-content: center;     /* Centers content vertically within the stopwatch */
+  align-items: center;         /* Centers content horizontally within the stopwatch */
+  height: fit-content;
+  width: fit-content;
+  min-width: 500px;
+}
+
+.timer{
+  font-size: 125px;
+  text-shadow: 2px 2px 2px rgb(104, 104, 104);
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+button{
+  font-size: 35px;
+  font-weight: 700;
+  border:none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.start-button{
+  background-color: rgb(0, 177, 0);
+  transition: background-color 0.5s ease;
+}
+.start-button:hover{
+  background-color: rgb(0, 80, 0);
+}
+.start-button:active{
+  background-color: rgb(0, 32, 0);
+}
+
+.stop-button{
+  background-color: rgb(214, 0, 0);
+  transition: background-color 0.5s ease;
+}
+.stop-button:hover{
+  background-color: rgb(150, 0, 0);
+}
+.stop-button:active{
+  background-color: rgb(80, 0, 0);
+}
+
+.reset-button{
+  background-color: rgb(0, 0, 204);
+  transition: background-color 0.5s ease;
+}
+.reset-button:hover{
+  background-color: rgb(0, 0, 143);
+}
+.reset-button:active{
+  background-color: rgb(0, 0, 73);
+}
+
